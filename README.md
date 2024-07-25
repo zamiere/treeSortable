@@ -159,7 +159,7 @@ sortable.addListener('click', '.remove-branch', function (event, instance) {
 	if (!confirm) {
 			return;
 	}
-	instance.removeBranch($(this));
+	instance.removeBranch($(event.target));
 });
 ```
 
